@@ -15,7 +15,7 @@ extension UIButton {
     func startLoading(style: UIActivityIndicatorView.Style = .white) {
         setTitle("", for: .disabled)
         isEnabled = false
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: style)
+        let activityIndicator = UIActivityIndicatorView(style: style)
         activityIndicator.color = self.titleLabel?.textColor
         activityIndicator.tag = activityIndicatorTag
         addSubview(activityIndicator)
