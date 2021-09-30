@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'QMQPay_Example' do
+  pod 'QMQPay', :path => '../'
+
+  target 'QMQPay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
