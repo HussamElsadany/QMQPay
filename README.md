@@ -22,7 +22,7 @@ pod 'QMQPay'
 
 ## Author
 
-hussam.elsadany@gmail.com, hussam.elsadany@gmail.com
+Omar Rashwan
 
 ## License
 
