@@ -1,30 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wmp-bc-mq4">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="pTh-ks-xQ5">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="QMQPay_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController id="8S2-YI-zz8" customClass="ViewController" customModule="QPayExampleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dLw-UA-LTa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iH9-rV-POh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-iS-pGY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1552"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iIU-pr-pN1">
+                                                <rect key="frame" x="20" y="20" width="335" height="532"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKj-9I-nXA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w1F-Uc-ZYX">
+                                                        <rect key="frame" x="0.0" y="46" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XL7-8e-pYl">
+                                                        <rect key="frame" x="0.0" y="92" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Merchant Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zi-5H-XoQ">
+                                                        <rect key="frame" x="0.0" y="138" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Merchant ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1J-Rf-Xed">
+                                                        <rect key="frame" x="0.0" y="184" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Merchant Def Data" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-ll-hL9">
+                                                        <rect key="frame" x="0.0" y="230" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Private Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-qq-yR5">
+                                                        <rect key="frame" x="0.0" y="276" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Private Key ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jZt-tB-NJy">
+                                                        <rect key="frame" x="0.0" y="322" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MH8-Dq-pE6">
+                                                        <rect key="frame" x="0.0" y="368" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEr-rN-gJd">
+                                                        <rect key="frame" x="0.0" y="414" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfu-sY-q5c">
+                                                        <rect key="frame" x="0.0" y="460" width="335" height="30"/>
+                                                        <state key="normal" title="process"/>
+                                                        <connections>
+                                                            <action selector="process:" destination="8S2-YI-zz8" eventType="touchUpInside" id="G2t-fK-kzd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-Va-IV0">
+                                                        <rect key="frame" x="0.0" y="502" width="335" height="30"/>
+                                                        <state key="normal" title="Auto Fill"/>
+                                                        <connections>
+                                                            <action selector="autoFill:" destination="8S2-YI-zz8" eventType="touchUpInside" id="n06-8H-4PV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="iIU-pr-pN1" firstAttribute="top" secondItem="jKo-iS-pGY" secondAttribute="top" constant="20" id="Bdr-Kj-1kv"/>
+                                            <constraint firstAttribute="bottom" secondItem="iIU-pr-pN1" secondAttribute="bottom" constant="1000" id="RQ5-Z9-3yM"/>
+                                            <constraint firstAttribute="trailing" secondItem="iIU-pr-pN1" secondAttribute="trailing" constant="20" id="ixY-Mr-KmW"/>
+                                            <constraint firstItem="iIU-pr-pN1" firstAttribute="leading" secondItem="jKo-iS-pGY" secondAttribute="leading" constant="20" id="nxg-nZ-pea"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jKo-iS-pGY" secondAttribute="bottom" id="3Zf-Pe-MbD"/>
+                                    <constraint firstAttribute="trailing" secondItem="jKo-iS-pGY" secondAttribute="trailing" id="5lR-A2-pRD"/>
+                                    <constraint firstItem="jKo-iS-pGY" firstAttribute="width" secondItem="iH9-rV-POh" secondAttribute="width" id="66V-N8-sqP"/>
+                                    <constraint firstItem="jKo-iS-pGY" firstAttribute="top" secondItem="iH9-rV-POh" secondAttribute="top" id="cym-Jg-fbu"/>
+                                    <constraint firstItem="jKo-iS-pGY" firstAttribute="leading" secondItem="iH9-rV-POh" secondAttribute="leading" id="fpy-2b-SZQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rxq-Wa-TZd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rxq-Wa-TZd" firstAttribute="trailing" secondItem="iH9-rV-POh" secondAttribute="trailing" id="5ud-LB-lY7"/>
+                            <constraint firstItem="iH9-rV-POh" firstAttribute="leading" secondItem="rxq-Wa-TZd" secondAttribute="leading" id="ISf-a4-JTz"/>
+                            <constraint firstItem="rxq-Wa-TZd" firstAttribute="bottom" secondItem="iH9-rV-POh" secondAttribute="bottom" id="Rgm-nM-gB1"/>
+                            <constraint firstItem="iH9-rV-POh" firstAttribute="top" secondItem="rxq-Wa-TZd" secondAttribute="top" id="ciq-qI-nNF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FCQ-ms-Ulp"/>
+                    <connections>
+                        <outlet property="amountField" destination="MH8-Dq-pE6" id="Kwj-rv-YQT"/>
+                        <outlet property="descField" destination="sEr-rN-gJd" id="f10-ih-dNR"/>
+                        <outlet property="emailField" destination="w1F-Uc-ZYX" id="c0T-bW-Pcq"/>
+                        <outlet property="merchantDefDataField" destination="3TJ-ll-hL9" id="5Uk-4V-PUl"/>
+                        <outlet property="merchantIDField" destination="Z1J-Rf-Xed" id="1di-BV-IyK"/>
+                        <outlet property="merchantNameField" destination="5zi-5H-XoQ" id="3se-Vi-kkR"/>
+                        <outlet property="privateKeyField" destination="BPQ-qq-yR5" id="fDl-tK-3OI"/>
+                        <outlet property="privateKeyIDField" destination="jZt-tB-NJy" id="azY-Wp-BT2"/>
+                        <outlet property="projectIdField" destination="XL7-8e-pYl" id="U8C-A6-rWb"/>
+                        <outlet property="tokenField" destination="iKj-9I-nXA" id="ysl-UY-zay"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDf-Hi-fAa" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8wJ-7z-qs8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="wmp-bc-mq4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MGP-UJ-vYH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8S2-YI-zz8" kind="relationship" relationship="rootViewController" id="SKP-Ub-vds"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qee-2Y-lVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
