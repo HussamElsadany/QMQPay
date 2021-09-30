@@ -516,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 237EA8D563F9F811C0236B36 /* Pods-QMQPay_Tests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -538,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D887375F560A4C90540F5C3C /* Pods-QMQPay_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -21,12 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/hussam.elsadany@gmail.com/QMQPay'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/HussamElsadany/QMQPay'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hussam.elsadany@gmail.com' => 'hussam.elsadany@gmail.com' }
-  s.source           = { :git => 'https://github.com/hussam.elsadany@gmail.com/QMQPay.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'hussam.elsadany@gmail.com' => 'Hussam Elsadany' }
+  s.source           = { :git => 'https://github.com/HussamElsadany/QMQPay.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.1'
 
